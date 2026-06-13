@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 import { getWriteupData, getSortedWriteupsData } from '@/lib/writeups';
 import GiscusComments from '@/components/GiscusComments';
+import SponsorCard from '@/components/SponsorCard';
 
 // Generate static params for all markdown writeups at build time
 export async function generateStaticParams() {
@@ -69,31 +70,8 @@ export default async function WriteupPage({ params }) {
         dangerouslySetInnerHTML={{ __html: contentHtml }} 
       />
 
-      <section className="sponsor-card">
-        <div className="sponsor-info">
-          <h4 className="sponsor-title">Support Independent Vulnerability Research</h4>
-          <p className="sponsor-desc">
-            Vulnerability hunting, audits, and disclosure coordination require significant time and expertise. Support my work or request a custom audit engagement.
-          </p>
-        </div>
-        <div className="sponsor-actions" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          <a 
-            href={process.env.NEXT_PUBLIC_BUY_ME_A_COFFEE_URL || "https://buymeacoffee.com/gemsabdul"} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="sponsor-btn"
-          >
-            ☕ Buy Me a Coffee
-          </a>
-          <a 
-            href="mailto:gemsabdul@gmail.com?subject=Audit%20Engagement%20Request" 
-            className="sponsor-btn"
-            style={{ backgroundColor: 'transparent', color: 'var(--text-primary)', borderColor: 'var(--border-dim)' }}
-          >
-            Request Audit
-          </a>
-        </div>
-      </section>
+      {/* Sponsor Options (Ko-fi & UPI) */}
+      <SponsorCard />
 
       {/* Giscus Comments block */}
       <GiscusComments />
