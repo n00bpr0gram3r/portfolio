@@ -96,7 +96,7 @@ export default function CVPage() {
 
       {/* Core Competencies (Capabilities Matrix) */}
       <section className="card-obsidian" style={{ marginBottom: '32px' }}>
-        <h3 className="card-title">CAPABILITIES MATRIX (COMPETENCIES)</h3>
+        <h2 className="card-title">CAPABILITIES MATRIX (COMPETENCIES)</h2>
         <div className="stats-grid">
           <div className="stat-bar-container">
             <div className="stat-bar-label">
@@ -147,7 +147,7 @@ export default function CVPage() {
           <div key={s.id} className="session-item">
             <div className="session-header">
               <div>
-                <h4 className="session-role">{s.role}</h4>
+                <h3 className="session-role">{s.role}</h3>
                 <span className="session-org">{s.org}</span>
               </div>
               <div>
