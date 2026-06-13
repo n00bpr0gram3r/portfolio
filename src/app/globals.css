@@ -845,4 +845,144 @@ body {
   font-weight: 700;
 }
 
+/* =========================================================================
+   RESPONSIVE DESIGN & MEDIA QUERIES (Obsidian Theme Hardening)
+   ========================================================================= */
+
+@media (max-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Sidebar Transformation: Fixed left panel to Stacking Top Header */
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-dim);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sidebar-top {
+    gap: 16px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .sidebar-bottom {
+    display: none; /* Hide sidebar ad/footer on mobile to keep header compact */
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 24px 16px;
+    width: 100%;
+  }
+
+  /* Dossier Header Responsive */
+  .dossier-header-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .identity-row {
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 10px;
+  }
+
+  .identity-label {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .session-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .session-meta-id {
+    text-align: left;
+  }
+
+  /* Writeup Pages Responsive */
+  .writeup-meta-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .writeup-article h1 {
+    font-size: 1.5rem;
+  }
+
+  .writeup-article h2 {
+    font-size: 1.2rem;
+  }
+  
+  .writeup-article pre {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .writeup-meta-card {
+    grid-template-columns: 1fr;
+  }
+
+  .alert-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .alert-tags {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
 
