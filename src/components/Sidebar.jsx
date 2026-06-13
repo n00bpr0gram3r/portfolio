@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CarbonAd from './CarbonAd';
 
 export default function Sidebar() {
   return (
@@ -37,16 +38,7 @@ export default function Sidebar() {
       </div>
 
       <div className="sidebar-bottom">
-        <div className="carbon-ad-placeholder">
-          <span className="ad-tag">OPERATOR ENGAGEMENTS</span>
-          <div className="ad-content-box">
-            <p className="ad-title">Request Code Audit</p>
-            <p className="ad-desc">Operator is available for private API, network, and source code security audits.</p>
-            <a href="mailto:gemsabdul@gmail.com?subject=Audit%20Engagement%20Request" className="ad-link-btn">
-              SECURE TARGET
-            </a>
-          </div>
-        </div>
+        <CarbonAd />
         <div className="sidebar-footer">
           <p>© 2026 Abdul Basit</p>
         </div>

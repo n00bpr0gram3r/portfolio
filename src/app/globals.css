@@ -791,3 +791,58 @@ body {
   border-color: var(--border-bright);
 }
 
+/* Carbon Ads Custom Styling (Obsidian Integration) */
+#carbon-ad-container {
+  min-height: 130px;
+}
+
+#carbonads {
+  display: block;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-dim);
+  border-radius: 6px;
+  padding: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+#carbonads a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: var(--text-primary);
+}
+
+#carbonads .carbon-img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+#carbonads .carbon-img img {
+  display: block;
+  border-radius: 4px;
+}
+
+#carbonads .carbon-text {
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+#carbonads .carbon-poweredby {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+
