@@ -13,10 +13,10 @@ export default function GiscusComments() {
 
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
-    script.setAttribute('data-repo', process.env.NEXT_PUBLIC_GISCUS_REPO || 'abdulb4s1t/website');
-    script.setAttribute('data-repo-id', process.env.NEXT_PUBLIC_GISCUS_REPO_ID || '');
+    script.setAttribute('data-repo', process.env.NEXT_PUBLIC_GISCUS_REPO || 'n00bpr0gram3r/portfolio');
+    script.setAttribute('data-repo-id', process.env.NEXT_PUBLIC_GISCUS_REPO_ID || 'R_kgDOS5hXDw');
     script.setAttribute('data-category', process.env.NEXT_PUBLIC_GISCUS_CATEGORY || 'Announcements');
-    script.setAttribute('data-category-id', process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID || '');
+    script.setAttribute('data-category-id', process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID || 'DIC_kwDOS5hXD84C_FIn');
     script.setAttribute('data-mapping', 'pathname');
     script.setAttribute('data-strict', '0');
     script.setAttribute('data-reactions-enabled', '1');
