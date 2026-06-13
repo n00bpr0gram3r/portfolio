@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import { getSortedWriteupsData } from '@/lib/writeups';
 
 export default async function sitemap() {
