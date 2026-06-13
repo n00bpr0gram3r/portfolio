@@ -7,7 +7,7 @@ export default function SponsorCard() {
   const [copied, setCopied] = useState(false);
 
   const kofiUrl = process.env.NEXT_PUBLIC_KO_FI_URL || 'https://ko-fi.com/gemsabdul';
-  const upiId = process.env.NEXT_PUBLIC_UPI_ID || 'gemsabdul@okaxis';
+  const upiId = process.env.NEXT_PUBLIC_UPI_ID || 'basit.abdul7@axl';
   const operatorName = 'Abdul Basit';
 
   const handleCopy = () => {
